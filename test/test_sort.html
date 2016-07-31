@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>quicksort test</title>
+	<script src="../quick_sort.js"></script>
+	<script src="../insertion_sort.js"></script>
+	<script src="../merge_sort.js"></script>
+	<script src="../binarytree_version_eng.js"></script>
+	<script src="node_modules/underscore/underscore.js"></script>
+</head>
+<body>
+	<script>
+	    /*var arr=[];
+		for(var i=0;i<100;i++){
+			arr.push(i);
+		}
+		arr=_.shuffle(arr);
+		var copy_arr=[].concat(arr);
+		var copy_arr_insert=[].concat(arr);
+		var copy_arr_merge=[].concat(arr);
+		// console.log(arr);
+		var timestamp=(new Date()).getTime();
+		quick_sort(copy_arr,0,copy_arr.length-1);
+		console.log((new Date).getTime()-timestamp);
+		// console.log(copy_arr.toString());
+		var timestamp=(new Date()).getTime();
+		insertion_sort(copy_arr_insert);
+ 		console.log('insert',(new Date).getTime()-timestamp);
+ 		console.log(copy_arr_insert);
+ 		var timestamp=(new Date()).getTime();
+		merge_sort(copy_arr_insert);
+ 		console.log('merge',(new Date).getTime()-timestamp);
+ 		console.log(copy_arr_merge);*/
+ 		var binarytree=new BinaryTree();
+ 		var o_1={
+ 			left:null,
+ 			right:null,
+ 			key:15
+ 		}
+ 		var o_2={
+ 			left:null,
+ 			right:null,
+ 			key:6
+ 		}
+ 		var o_3={
+ 			left:null,
+ 			right:null,
+ 			key:18
+ 		}
+ 		var o_4={
+ 			left:null,
+ 			right:null,
+ 			key:3
+ 		}
+ 		var o_5={
+ 			left:null,
+ 			right:null,
+ 			key:10
+ 		}
+ 		var o_6={
+ 			left:null,
+ 			right:null,
+ 			key:17
+ 		};
+ 		var o_7={
+ 			left:null,
+ 			right:null,
+ 			key:20
+ 		}
+ 		var o_8={
+ 			left:null,
+ 			right:null,
+ 			key:2
+ 		}
+ 		var o_9={
+ 			left:null,
+ 			right:null,
+ 			key:4
+ 		}
+ 		var o_10={
+ 			left:null,
+ 			right:null,
+ 			key:8
+ 		}
+ 		var o_11={
+ 			left:null,
+ 			right:null,
+ 			key:13
+ 		}
+ 		var o_12={
+ 			left:null,
+ 			right:null,
+ 			key:11
+ 		}
+ 		binarytree.insert(o_1);
+ 		binarytree.insert(o_2);
+ 		binarytree.insert(o_3);
+ 		binarytree.insert(o_4);
+ 		binarytree.insert(o_5);
+ 		binarytree.insert(o_6);
+ 		binarytree.insert(o_7);
+ 		binarytree.insert(o_8);
+ 		binarytree.insert(o_9);
+ 		binarytree.insert(o_10);
+ 		binarytree.insert(o_11);
+ 		binarytree.insert(o_12);
+ 		binarytree.inorder_tree_walk();
+ 		console.log('total_tree',binarytree);
+ 		console.log('search_key',binarytree.tree_search(undefined,13));
+ 		console.log('search_key_not_found',binarytree.tree_search(undefined,19));
+ 		console.log('minimun',binarytree.minimun(binarytree.root));
+ 		console.log('maximun',binarytree.maximun(binarytree.root));
+ 		console.log('successor_ord',binarytree.successor(o_2));
+ 		console.log('successor_extra',binarytree.successor(o_10));
+ 		console.log('predecessor_ord',binarytree.predecessor(o_3));
+ 		console.log('predecessor_extra',binarytree.predecessor(o_6));
+ 		/*console.log('delete_left',binarytree.delete(o_5));
+ 		console.log('total_tree',binarytree);*/
+ 		/*console.log('delete_left',binarytree.delete(o_3));
+ 		console.log('total_tree',binarytree);*/
+ 		console.log('delete_left',binarytree.delete(o_2));
+ 		console.log('total_tree',binarytree);
+	</script>
+</body>
+</html>
